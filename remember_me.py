@@ -22,11 +22,13 @@ def get_new_username():
 def greet_user():
     """Greet the user by name."""
     username = get_stored_username()
+    ##Here is where I edited the code for Exercise 10.13
     check_username = input("Is, " + username + " the correct username?: ")
     if check_username == 'yes':
         print("Welcome back, " + username + "!")
     elif check_username == 'no':
         username = get_new_username()
         print("We'll remember you when you come back, " + username + "!")
+      ## To Here
 
 greet_user()
